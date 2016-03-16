@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app="angularApp">
+<head><title>Angular Template</title></head>
+
+<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<body>	
+		<nav class="navbar navbar-inverse" ng-controller="appCtrl">
+			<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href ="#/link1">Home</a></li>
+				<li><a href ="#/link2">About</a></li>
+			</ul>
+			</div>
+		</nav>
+		
+	<div class="jumbotron">
+		<div ng-view></div>
+	</div>
+	
+</body>
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script src="modules/link1/linkOne.js"></script>
+<script src="modules/link2/linkTwo.js"></script>
+
+</html>
